@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Fist Post"
+title: "My First Post"
 date: 2023-05-08 18:30:00 -0000
 categories: first, post
 ---
