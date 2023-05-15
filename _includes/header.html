@@ -5,11 +5,9 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
+
     {%- if page_paths -%}
-      <nav class="site-nav">
-      {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-      {% endfor %}
+        {% include navigation.html %}
     {%- endif -%}
 
   </div>
