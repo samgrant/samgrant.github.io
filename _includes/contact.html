@@ -1,0 +1,45 @@
+<div class="contact-container">
+  <ul class="list-unstyled contact-list">
+    
+    {% if sidebar.email %}
+    <li class="mail">
+      {% include svg/send-mail.svg %}  
+      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.website %}
+    <li class="website">
+      {% include svg/safari.svg %}  
+      <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.linkedin %}
+    <li class="linkedin">
+      {% include svg/linkedin.svg %}  
+      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.github %}
+    <li class="github">
+      {% include svg/github.svg %}  
+      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.gitlab %}
+    <li class="gitlab"><i class="fab fa-gitlab"></i>
+      <a href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
+    </li>
+    {% endif %}
+    {% if sidebar.pdf %}
+    <li class="pdf">
+      {% include svg/cloud-download.svg %}  
+      <a href="/assets/images/{{ sidebar.pdf }}" target="_blank">Full CV</a>
+    </li>
+    {% endif %}
+
+  </ul>
+</div><!--//contact-container-->

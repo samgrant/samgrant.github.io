@@ -1,0 +1,110 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: left # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Sam Grant
+    tagline: Product Manager
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: sam@samgrant.co.uk
+    # phone: 012 345 6789
+    # timezone: America/Cancun Timezone
+    # citizenship:
+    website: samgrant.co.uk #do not add http://
+    linkedin: samanthagrant
+    github: samgrant
+    pdf: cv.pdf
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Native
+
+        - idiom: French
+          level: Learning
+
+    interests:
+      title: Interests
+      info:
+        - item: Walking
+          link:
+
+        - item: Photography
+          link:
+
+        - item: Reading
+          link:
+
+what-i-do:
+    title: what i do
+    summary: I am part of an exceptional team at DeadHappy that is dedicated to changing attitudes towards death. I work closely with insurance partners, underwriters, and technology teams to drive product innovation that makes traditional protection products more accessible, affordable, and flexible for our customers.
+
+why-i-do-it:
+    title: why i do it
+    summary: My passion lies in creating exceptional products that exceed end-users' expectations while achieving business objectives. I am equally intrigued by team dynamics and strive to create cohesive, committed teams that deliver outstanding results. Above all, I am motivated to collaborate with inspiring individuals and pursue excellence in everything I do.
+
+
+what-ive-done:
+    title: what I've done
+    summary: |
+      Over the course of my career, I have honed a diverse skill set that has equipped me to engage with stakeholders at all levels of an organisation to identify opportunities for growth and efficiency. Working closely alongside both engineering and executive teams, I have successfully developed and delivered a range of new products and initiatives, including those that simplify complex and heavily regulated products into intuitive, user-friendly services for customers to easily access.
+      
+      In addition to my core product and project management expertise, I have also facilitated workshops, team building events, strategy sessions, and have led Labs teams in utilising a lean, build-measure-learn approach to test and validate unproven solutions, driving innovation across multiple product areas.
+
+where-ive-worked:
+    title: where i've worked
+    summary: |
+      - DeadHappy, Head of Product, 2020 - present
+      - Profile Pensions, Head of Product, 2017 - 2020
+      - Comparethemarket.com, Senior Project / Product / Portfolio Manager, 2013 - 2017 
+      - Shazam, Technical Project Manager, 2012 - 2013
+      - BBC, Software Engineer / Technical Project / Product Manager, 2010 - 2012
+      - DDB London, Designer / Software Developer, 2000 - 2009
+
+  
+what-ive-learnt:
+    title: what I've learnt
+    summary: |
+      - CMI Level 7 Extended Diploma in Strategic Management & Leadership in July 2015 
+      - CMI Level 7 Certificate in Strategic Management & Leadership in December 2014
+
+what-ive-won:
+    title: what I've won
+    summary: |
+      - CMI Recognition Award in July 2015
+      - Launch It Awards - Olympics London 2012 & iPlayer Live Restart
+
+what-i-like:
+    title: what I like
+    summary: | 
+      Family. Good friends, good books, good food, fine wine, country walks, gentle runs, inspiring views, interesting conversation. Just a few of my favourite things.
+
+what-i-know:
+    title: what I know
+    summary: |
+      - Strategy & Development (product management)
+      - Planning & Organisation (project management)
+      - Common Sense (agile methodologies)
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Strategy & Development (product management)
+        level: 98%
+
+      - name: Planning & Organisation (project management)
+        level: 98%
+
+      - name: Common Sense (agile methodologies)
+        level: 98%
+
+footer: >

@@ -1,0 +1,14 @@
+{% assign why-i-do-it = site.data.data.why-i-do-it %}
+{% if why-i-do-it %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    {% include svg/heart.svg %}  
+    {{ why-i-do-it.title }}
+  </h2>
+  <div class="section-summary">
+    {{ why-i-do-it.summary | markdownify }}
+  </div><!--//summary-->
+    
+</section><!--//section-->
+{% endif %}

@@ -1,0 +1,13 @@
+{% assign where-ive-worked= site.data.data.where-ive-worked %}
+{% if where-ive-worked %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    {% include svg/pin-alt.svg %}  
+    {{ where-ive-worked.title }}
+  </h2>
+  <div class="section-summary">
+    {{ where-ive-worked.summary | markdownify }}
+  </div><!--//summary-->
+</section><!--//section-->
+{% endif %}

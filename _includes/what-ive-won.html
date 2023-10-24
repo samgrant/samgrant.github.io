@@ -1,0 +1,14 @@
+{% assign what-ive-won = site.data.data.what-ive-won %}
+{% if what-ive-won %}
+<section class="section summary-section">
+
+  <h2 class="section-title">
+    {% include svg/1st-medal.svg %}  
+    {{ what-ive-won.title }}
+  </h2>
+  <div class="section-summary">
+    {{ what-ive-won.summary | markdownify }}
+  </div><!--//summary-->
+    
+</section><!--//section-->
+{% endif %}

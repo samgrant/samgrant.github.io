@@ -1,0 +1,14 @@
+{% assign what-i-do = site.data.data.what-i-do %}
+{% if what-i-do %}
+<section class="section">
+
+  <h2 class="section-title">
+    {% include svg/user-love.svg %}  
+    {{ what-i-do.title }}
+  </h2>
+  <div class="section-summary">
+    {{ what-i-do.summary | markdownify }}
+  </div><!--//summary-->
+    
+</section><!--//section-->
+{% endif %}
