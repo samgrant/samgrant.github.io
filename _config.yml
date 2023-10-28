@@ -2,7 +2,7 @@
 
 # Site Settings
 title: CV
-url: 'http://samgrant.co.uk'
+url: 'https://cv.samgrant.co.uk'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
@@ -19,13 +19,13 @@ chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't wa
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Build settings
 compress-site: yes
 
 encoding: "utf-8"
-compress_html: # - http://jch.penibelst.de/
+compress_html: # - https://jch.penibelst.de/
   clippings: all
   ignore:
     envs: development
