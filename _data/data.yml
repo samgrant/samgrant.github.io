@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: Sam Grant
-    tagline: Product Manager
+    tagline: Product Director
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -35,6 +35,80 @@ sidebar:
       title: Interests
       info:
         - item: Walking
+          link:
+
+        - item: Photography
+          link:
+
+        - item: Reading
+          link:
+
+what-i-do:
+    title: what i do
+    summary: I define product vision and strategy, and build the conditions for teams to deliver it. That means getting clear on outcomes, making trade-offs explicit, and creating enough structure that people can move fast without constantly second-guessing the direction. I'm particularly good in environments where technical constraints, regulatory requirements or legacy complexity shape what's possible — because I understand those pressures well enough not to pretend they don't exist, and commercially astute enough not to hide behind them.
+
+why-i-do-it:
+    title: why i do it
+    summary: I want to work on products that earn their place — that genuinely improve people's relationship with something difficult, whether that's money, health, insurance or something else they've been underserved by. I do my best work in organisations that take that seriously — that are curious, direct, and willing to challenge how things have always been done.
+
+what-ive-done:
+    title: what I've done
+    summary: |
+      Product leader with 15+ years making complex, regulated products work for real people. I've spent most of my career in environments where the product decisions aren't just commercially important — they actually matter. Insurance people couldn't access. Pensions people didn't understand. Financial products that excluded the people who needed them most. That's the problem space I keep coming back to, and where I do my best work.
+
+where-ive-worked:
+    title: where i've worked
+    summary: |
+      - The Workshop Technologies, Product Director, 2024 - present
+      - DeadHappy, Head of Product, 2020 - 2024
+      - Profile Pensions, Head of Product, 2018 - 2020
+      - Comparethemarket.com, Senior Project / Product / Portfolio Manager, 2013 - 2017
+      - Shazam, Technical Project Manager, 2012 - 2013
+      - BBC, Software Engineer / Technical Project / Product Manager, 2010 - 2012
+      - DDB London, Designer / Software Developer, 2000 - 2009
+
+what-ive-learnt:
+    title: what I've learnt
+    summary: |
+      - CMI Level 7 Extended Diploma in Strategic Management & Leadership in July 2015
+      - CMI Level 7 Certificate in Strategic Management & Leadership in December 2014
+
+what-ive-won:
+    title: what I've won
+    summary: |
+      - CMI Recognition Award in July 2015
+      - BBC Launch It Awards - London Olympics & iPlayer Live Restart
+
+what-i-like:
+    title: what I like
+    summary: |
+      Family. Good friends, good books, good food, fine wine, country walks, gentle runs, inspiring views, interesting conversation. Just a few of my favourite things.
+
+what-i-know:
+    title: what I know
+    summary: |
+      - Product and portfolio strategy across complex digital platforms
+      - Operating model design, modularisation and organisational change
+      - Customer-centred product development in regulated environments
+      - Commercial growth, conversion and experimentation
+      - Technical fluency across platforms and APIs
+      - Senior stakeholder, executive and partner alignment
+      - FCA regulatory delivery including Consumer Duty
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Strategy & Development (product management)
+        level: 98%
+
+      - name: Planning & Organisation (project management)
+        level: 98%
+
+      - name: Common Sense (agile methodologies)
+        level: 98%
+
+footer: >        - item: Walking
           link:
 
         - item: Photography
