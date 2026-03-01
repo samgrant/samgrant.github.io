@@ -1,23 +1,13 @@
-{% assign where-ive-worked = site.data.data.where-ive-worked %}
+{% assign where-ive-worked= site.data.data.where-ive-worked %}
 {% if where-ive-worked %}
-<section class="section experiences-section">
+<section class="section summary-section">
 
   <h2 class="section-title">
-    {% include svg/pin-alt.svg %}
+    {% include svg/pin-alt.svg %}  
     {{ where-ive-worked.title }}
   </h2>
-
-  {% for job in where-ive-worked.jobs %}
-  <div class="item">
-    <div class="upper-row">
-      <h3 class="job-title">{{ job.title }}</h3>
-      <div class="time">{{ job.time }}</div>
-    </div>
-    <div class="company">{{ job.company }}</div>
-    {% if job.details %}
-    <p>{{ job.details }}</p>
-    {% endif %}
-  </div>
-  {% endfor %}
-
+  <div class="section-summary">
+    {{ where-ive-worked.summary | markdownify }}
+  </div><!--//summary-->
 </section><!--//section-->
+{% endif %}
