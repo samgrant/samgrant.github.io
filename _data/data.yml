@@ -72,48 +72,27 @@ what-ive-done:
 
 where-ive-worked:
     title: where i've worked
-    jobs:
-      - title: Product Director
-        company: The Workshop Technologies
-        time: 2024 - present
-        details: >
-          Leading product strategy across four domains. Defined the product vision, redefined the PM career pathway and built a self-assessment tool to support team development. Selected for the Leadership Spotlight programme. Currently developing a jobs-to-be-done PDLC framework to sharpen how the organisation thinks about delivery and outcomes.
+    summary: |
+      The Workshop Technologies, Product Director, 2024 - present
+      Leading product strategy across four domains. Defined the product vision, redefined the PM career pathway and built a self-assessment tool to support team development. Selected for the Leadership Spotlight programme. Currently developing a jobs-to-be-done PDLC framework to sharpen how the organisation thinks about delivery and outcomes.
 
-      - title: Head of Product
-        company: DeadHappy
-        time: 2020 - 2024
-        details: >
-          Built and scaled digital protection products that made life insurance accessible to people traditional providers ignored — Life, Cancer Cover (15% penetration), Near Death Cover (30% penetration), and digital Wills (35% signup). Drove upsell initiatives that increased income per sale by 25%. Introduced Direct Debit, adopted by 75% of customers with a 20% reduction in failed payments. Led FCA Consumer Duty compliance, reporting directly to the Board.
+      DeadHappy, Head of Product, 2020 - 2024
+      Built and scaled digital protection products that made life insurance accessible to people traditional providers ignored -- Life, Cancer Cover (15% penetration), Near Death Cover (30% penetration), and digital Wills (35% signup). Drove upsell initiatives that increased income per sale by 25%. Introduced Direct Debit, adopted by 75% of customers with a 20% reduction in failed payments. Led FCA Consumer Duty compliance, reporting directly to the Board.
 
-      - title: Head of Product
-        company: Profile Pensions
-        time: 2018 - 2020
-        details: >
-          Partnered with the CEO and CTO to digitise complex pension journeys. Delivered Account Hub and a major overhaul of onboarding and UX, increasing acquisition and sustaining long-term engagement.
+      Profile Pensions, Head of Product, 2018 - 2020
+      Partnered with the CEO and CTO to digitise complex pension journeys. Delivered Account Hub and a major overhaul of onboarding and UX, increasing acquisition and sustaining long-term engagement.
 
-      - title: Senior Product & Portfolio Manager
-        company: Comparethemarket.com
-        time: 2013 - 2017
-        details: >
-          Owned vertical product strategy across Pet, Travel and SME. Led Labs innovation and delivered national campaigns including Meerkat Movies.
+      Comparethemarket.com, Senior Product & Portfolio Manager, 2013 - 2017
+      Owned vertical product strategy across Pet, Travel and SME. Led Labs innovation and delivered national campaigns including Meerkat Movies.
 
-      - title: Technical Project Manager
-        company: Shazam
-        time: 2012 - 2013
-        details: >
-          Delivered core mobile app experiences at scale.
+      Shazam, Technical Project Manager, 2012 - 2013
+      Delivered core mobile app experiences at scale.
 
-      - title: Software Engineer / Technical Product Manager
-        company: BBC
-        time: 2010 - 2012
-        details: >
-          Delivered large-scale consumer platforms including London 2012 Olympics streaming and iPlayer Live Restart.
+      BBC, Software Engineer / Technical Product Manager, 2010 - 2012
+      Delivered large-scale consumer platforms including London 2012 Olympics streaming and iPlayer Live Restart.
 
-      - title: Designer / Software Developer
-        company: DDB London
-        time: 2000 - 2009
-        details: >
-          Earlier career spanning digital design and software development across VW, Philips, Sony, lastminute.com and others.
+      DDB London, Designer / Software Developer, 2000 - 2009
+      Earlier career spanning digital design and software development across VW, Philips, Sony, lastminute.com and others.
 
 what-ive-learnt:
     title: what I've learnt
@@ -142,5 +121,18 @@ what-i-know:
       - Technical fluency across platforms and APIs
       - Senior stakeholder, executive and partner alignment
       - FCA regulatory delivery including Consumer Duty
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Strategy & Development (product management)
+        level: 98%
+
+      - name: Planning & Organisation (project management)
+        level: 98%
+
+      - name: Common Sense (agile methodologies)
+        level: 98%
 
 footer: >
