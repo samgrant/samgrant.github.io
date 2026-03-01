@@ -1,0 +1,455 @@
+/* ============================================================
+   Sam Grant — CV
+   style.css
+   ============================================================ */
+
+/* ---- Reset ---- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Design tokens ---- */
+
+:root {
+  --text:           #111827;
+  --text-secondary: #4b5563;
+  --text-muted:     #9ca3af;
+  --border:         #e5e7eb;
+  --accent:         #1d4ed8;
+  --accent-hover:   #1e40af;
+  --bg:             #ffffff;
+  --sidebar-bg:     #fafafa;
+
+  --sidebar-width: 288px;
+  --main-max:      680px;
+
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  40px;
+  --space-xl:  64px;
+  --space-2xl: 80px;
+}
+
+/* ---- Base ---- */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--font);
+  line-height: 1.75;
+  color: var(--text-secondary);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---- Layout ---- */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---- Sidebar ---- */
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.sidebar-inner {
+  padding: 48px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Profile */
+
+.avatar {
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.name {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Contact list */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.contact-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  min-width: 44px;
+  flex-shrink: 0;
+}
+
+.contact a {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.12s;
+}
+
+.contact a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Assessment button */
+
+.assessment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--text);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.12s;
+  letter-spacing: 0.01em;
+}
+
+.assessment-btn:hover {
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.btn-arrow {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Section nav */
+
+.section-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.section-nav a {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 5px 0;
+  border-left: 2px solid transparent;
+  padding-left: 10px;
+  margin-left: -10px;
+  transition: color 0.12s, border-color 0.12s;
+}
+
+.section-nav a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.section-nav a.active {
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+
+/* ---- Main content ---- */
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-xl) var(--space-2xl) 120px;
+  max-width: calc(var(--main-max) + var(--space-2xl) * 2);
+}
+
+/* Sections */
+
+section {
+  margin-bottom: 72px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Section label */
+
+.section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* Body paragraphs */
+
+p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+/* ---- Jobs ---- */
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.job-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.job-role {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.job-sep {
+  color: var(--text-muted);
+}
+
+.job-company {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.job-date {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.job p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.job-cta {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.job-cta:hover {
+  text-decoration: underline;
+}
+
+/* ---- Lists ---- */
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-list li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.skill-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  top: 1px;
+}
+
+.plain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.plain-list li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ---- Print ---- */
+
+@media print {
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    page-break-after: avoid;
+  }
+
+  .sidebar-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .section-nav {
+    display: none;
+  }
+
+  .main {
+    padding: 32px 24px;
+  }
+
+  a {
+    color: var(--text);
+  }
+
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 40px;
+  }
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 240px;
+  }
+
+  .main {
+    padding: var(--space-xl) var(--space-lg) 80px;
+  }
+}
+
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-inner {
+    padding: 32px 24px 28px;
+    gap: 28px;
+  }
+
+  .section-nav {
+    display: none;
+  }
+
+  .main {
+    padding: 40px 24px 80px;
+  }
+
+  .main p,
+  .skill-list li,
+  .plain-list li,
+  .job p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 32px 20px 64px;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .job-date {
+    font-size: 12px;
+  }
+}
