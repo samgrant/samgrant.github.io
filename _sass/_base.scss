@@ -1,4 +1,9 @@
 /* ======= Base ======= */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: $text-color-secondary;
