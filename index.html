@@ -211,21 +211,40 @@
 <script>
   // Scroll spy: highlight active section in sidebar nav
   (function () {
-    var sections = document.querySelectorAll('section[id]');
+    var sections = Array.from(document.querySelectorAll('section[id]'));
     var links = document.querySelectorAll('.section-nav a');
     if (!sections.length || !links.length) return;
 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          links.forEach(function (link) {
-            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
-          });
-        }
+    function setActive(id) {
+      links.forEach(function (link) {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
       });
-    }, { rootMargin: '-10% 0px -80% 0px' });
+    }
 
-    sections.forEach(function (s) { observer.observe(s); });
+    function onScroll() {
+      var scrollY = window.scrollY || window.pageYOffset;
+      var viewportHeight = window.innerHeight;
+      var docHeight = document.documentElement.scrollHeight;
+
+      // If near the bottom, highlight the last section
+      if (scrollY + viewportHeight >= docHeight - 10) {
+        setActive(sections[sections.length - 1].id);
+        return;
+      }
+
+      // Highlight the last section whose top is at or above 20% down the viewport
+      var threshold = scrollY + viewportHeight * 0.2;
+      var active = sections[0];
+      for (var i = 0; i < sections.length; i++) {
+        if (sections[i].getBoundingClientRect().top + scrollY <= threshold) {
+          active = sections[i];
+        }
+      }
+      setActive(active.id);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   })();
 </script>
 
