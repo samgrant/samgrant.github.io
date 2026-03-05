@@ -223,20 +223,19 @@
 
     function onScroll() {
       var scrollY = window.scrollY || window.pageYOffset;
-      var viewportHeight = window.innerHeight;
-      var docHeight = document.documentElement.scrollHeight;
+      var viewportH = window.innerHeight;
+      var remaining = document.documentElement.scrollHeight - scrollY - viewportH;
 
-      // If near the bottom, highlight the last section
-      if (scrollY + viewportHeight >= docHeight - 10) {
-        setActive(sections[sections.length - 1].id);
-        return;
-      }
+      // Gradually raise the trigger line as we near the bottom of the page,
+      // so short sections can activate before scroll room runs out.
+      var baseT = viewportH * 0.2;
+      var maxT  = viewportH * 0.85;
+      var t = remaining < viewportH ? 1 - remaining / viewportH : 0;
+      var triggerY = baseT + t * (maxT - baseT);
 
-      // Highlight the last section whose top is at or above 20% down the viewport
-      var threshold = scrollY + viewportHeight * 0.2;
       var active = sections[0];
       for (var i = 0; i < sections.length; i++) {
-        if (sections[i].getBoundingClientRect().top + scrollY <= threshold) {
+        if (sections[i].getBoundingClientRect().top <= triggerY) {
           active = sections[i];
         }
       }
