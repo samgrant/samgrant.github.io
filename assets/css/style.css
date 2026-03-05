@@ -255,7 +255,7 @@ p {
 .jobs {
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 24px;
 }
 
 .job-header {
