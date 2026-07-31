@@ -261,10 +261,192 @@
   }
 
   @media print {
-    body { background: white; }
-    .page { padding: 72pt 0; }
-    @page { margin: 60pt 88pt; size: A4; }
+
+    /* ── Page setup ── */
+    @page {
+      size: A4;
+      margin: 52pt 64pt 52pt 64pt;
+    }
+
+    /* ── Base ── */
+    body {
+      background: white;
+      color: #111111;
+      font-size: 9pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ── Page container ── */
+    .page {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* ── Header ── */
+    .header {
+      margin-bottom: 24pt;
+    }
+
+    .name {
+      color: #111111;
+    }
+
+    .name-title {
+      color: #888888;
+      opacity: 1;
+    }
+
+    .contact {
+      color: #888888;
+    }
+
+    /* Suppress link underlines and URL expansion */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a[href]::after {
+      content: none !important;
+    }
+
+    /* ── Proposition ── */
+    .proposition {
+      font-size: 17pt;
+      margin-bottom: 22pt;
+      color: #111111;
+    }
+
+    /* ── Profile section ── */
+    .section:first-of-type {
+      margin-bottom: 22pt;
+    }
+
+    .pull {
+      font-size: 11.5pt;
+      margin-bottom: 9pt;
+      color: #444444;
+      max-width: 90%;
+    }
+
+    .prose p {
+      font-size: 8.5pt;
+      color: #444444;
+      margin-bottom: 7pt;
+      line-height: 1.65;
+      max-width: 90%;
+    }
+
+    /* ── Section spacing ── */
+    .section {
+      margin-bottom: 20pt;
+    }
+
+    /* ── Section label ── */
+    .label {
+      color: #1d3455;
+      margin-bottom: 14pt;
+      font-size: 6.5pt;
+    }
+
+    /* ── Section title (Experience heading) ── */
+    .section-title {
+      color: #888888;
+      opacity: 1;
+      margin-bottom: 16pt;
+    }
+
+    /* ── Experience entries: keep each role together ── */
+    .entry {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 22pt;
+    }
+
+    .entry-header {
+      margin-bottom: 2pt;
+    }
+
+    .entry-title {
+      font-size: 10.5pt;
+      color: #111111;
+    }
+
+    .entry-dates {
+      color: #aaaaaa;
+    }
+
+    .entry-org {
+      color: #1d3455;
+      margin-bottom: 7pt;
+    }
+
+    .entry-context {
+      font-size: 8pt;
+      color: #444444;
+      margin-bottom: 8pt;
+      line-height: 1.6;
+      max-width: 90%;
+    }
+
+    /* ── Impact statements ── */
+    .impact-list li {
+      font-size: 7.5pt;
+      color: #555555;
+      padding: 3pt 0 3pt 16pt;
+      line-height: 1.55;
+      max-width: 90%;
+    }
+
+    .impact-list li strong {
+      font-size: 8.5pt;
+      color: #111111;
+    }
+
+    /* ── Earlier career ── */
+    .earlier {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 20pt;
+    }
+
+    .earlier-title {
+      color: #111111;
+      font-size: 10.5pt;
+    }
+
+    .earlier-body {
+      font-size: 7.5pt;
+      color: #888888;
+      line-height: 1.6;
+      max-width: 85%;
+    }
+
+    /* ── Awards: keep together ── */
+    .section:last-of-type {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* ── Closing: keep together, never orphaned ── */
+    .closing {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      break-before: avoid;
+      page-break-before: avoid;
+      margin-top: 20pt;
+    }
+
+    .closing p {
+      font-size: 10.5pt;
+      color: #aaaaaa;
+    }
+
   }
+
 </style>
 </head>
 <body>
