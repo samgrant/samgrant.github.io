@@ -183,6 +183,46 @@
   .entry-body p { margin-bottom: 6pt; }
   .entry-body p:last-child { margin-bottom: 0; }
 
+    /* Context paragraph */
+  .entry-context {
+    font-family: var(--sans);
+    font-size: 8.5pt;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--secondary);
+    max-width: 440px;
+    margin-bottom: 12pt;
+  }
+
+
+  /* Impact statements — editorial callout style */
+  .impact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .impact-list li {
+    font-family: var(--sans);
+    font-size: 8pt;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--secondary);
+    padding: 4pt 0 4pt 20pt;
+    position: relative;
+    max-width: 430px;
+  }
+
+  /* The metric/highlight within an impact statement */
+  .impact-list li strong {
+    font-weight: 400;
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 9pt;
+    font-style: italic;
+  }
+
+
   /* ── Earlier roles — compressed ── */
   .earlier {
     margin-bottom: 52pt;
@@ -250,8 +290,8 @@
   <div class="section">
     <p class="pull">I enjoy working where products are struggling not because the teams aren't capable, but because ownership is unclear, priorities compete and decisions have become harder than they need to be.</p>
     <div class="prose">
-      <p>I began my career in software engineering and delivery before moving into product leadership — a foundation that lets me work credibly across engineering, commercial strategy and executive leadership without needing to translate between them.</p>
-      <p>More recently, I've been embedding AI into product practice: accelerating discovery, synthesising customer insight, sharpening strategic thinking and helping teams adopt AI in practical, value-driven ways.</p>
+      <p>I began my career in software engineering and delivery before moving into product leadership — a foundation that lets me work credibly across engineering, commercial strategy and executive leadership.</p>
+      <p>Recently, I've been embedding AI into product practice: accelerating discovery, synthesising customer insight, sharpening strategic thinking and helping teams adopt AI in practical, value-driven ways.</p>
       <p>The work I'm proudest of has combined commercial success with meaningful customer impact — products that performed well commercially because they genuinely served people who had previously been underserved.</p>
     </div>
   </div>
@@ -266,10 +306,13 @@
         <span class="entry-dates">2024 – present</span>
       </div>
       <p class="entry-org">The Workshop</p>
-      <div class="entry-body">
-        <p>Leading product strategy across four domains in a complex B2B platform environment — licensed software and services delivered to enterprise clients. Rebuilt the product operating model around clear ownership and outcome-led delivery, shifting product from order-taker to strategic partner.</p>
-        <p>Defined the Product Management career framework and capability assessment. Led strategic initiatives spanning platform modernisation and AI adoption. Partner with engineering, architecture and executive leadership on investment and product strategy.</p>
-      </div>
+      <p class="entry-context">Leading product strategy across four domains in a complex B2B platform environment, partnering with engineering, architecture and executive leadership to align technology investment with business strategy.</p>
+      <ul class="impact-list">
+        <li>Rebuilt the product operating model around clear ownership and outcome-led delivery, shifting Product from order-taker to strategic partner.</li>
+        <li>Defined the Product Management career framework, creating consistent expectations, capability assessment and progression pathways.</li>
+        <li>Leading strategic initiatives spanning platform modernisation, AI adoption and organisational change, embedding AI into day-to-day product practice.</li>
+        <li>Acting as the senior product representative in executive and strategic partner engagements, strengthening commercial alignment and delivery confidence.</li>
+      </ul>
     </div>
 
     <div class="entry">
@@ -278,10 +321,13 @@
         <span class="entry-dates">2020 – 2024</span>
       </div>
       <p class="entry-org">DeadHappy</p>
-      <div class="entry-body">
-        <p>Built and scaled digital protection products for audiences traditional insurers had excluded. Launched Cancer Cover (15% market penetration), Digital Wills (35% adoption) and increased income per sale by 25%.</p>
-        <p>Led FCA Consumer Duty implementation, reporting directly to the Board. Built the organisational conditions for product to operate with genuine autonomy — decisions made at the right level, with accountability to match.</p>
-      </div>
+      <p class="entry-context">Built and scaled digital protection products for audiences traditional insurers had excluded, combining commercial growth with meaningful customer impact.</p>
+      <ul class="impact-list">
+        <li>Launched Cancer Cover (15% market penetration), Near Death Cover (30% market penetration) and Digital Wills (35% sign-up, 5% conversion), creating entirely new revenue streams.</li>
+        <li>Designed proposition and upsell initiatives that increased income per sale by 25%.</li>
+        <li>Introduced Direct Debit as a payment option, adopted by 75% of customers, reducing failed payments by 20%.</li>
+        <li>Led FCA Consumer Duty implementation, reporting directly to the Board, while expanding distribution through five new affiliate partnerships.</li>
+      </ul>
     </div>
 
     <div class="entry">
@@ -290,31 +336,40 @@
         <span class="entry-dates">2018 – 2020</span>
       </div>
       <p class="entry-org">Profile Pensions</p>
-      <div class="entry-body">
-        <p>Partnered with CEO and CTO to digitise complex pension journeys. Delivered Account Hub and a major overhaul of onboarding and UX, increasing acquisition and sustaining long-term engagement. Navigated FCA regulatory requirements while simplifying customer experience.</p>
-      </div>
+      <p class="entry-context">Partnered with the CEO and CTO to modernise pension management, transforming complex, paper-based customer journeys into intuitive digital experiences.</p>
+      <ul class="impact-list">
+        <li>Replaced manual pension servicing with the Account Hub, creating an always-on digital relationship with customers.</li>
+        <li>Led the end-to-end digitisation of pension servicing journeys.</li>
+        <li>Improved acquisition and conversion through a complete redesign of onboarding and customer experience.</li>
+      </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Senior Product roles</span>
+        <span class="entry-title">Senior Product Roles</span>
         <span class="entry-dates">2013 – 2017</span>
       </div>
       <p class="entry-org">Comparethemarket.com</p>
-      <div class="entry-body">
-        <p>Owned vertical product strategy across Pet, Travel and SME. Led Labs innovation and delivered national campaigns including Meerkat Movies.</p>
-      </div>
+      <p class="entry-context">Led product strategy across multiple consumer propositions while helping mature product delivery at scale.</p>
+      <ul class="impact-list">
+        <li>Established and scaled the PMO function within an Agile delivery environment.</li>
+        <li>Launched Meerkat Movies, one of the company's flagship customer engagement initiatives.</li>
+        <li>Shaped and delivered proposition innovations including Simples and Snap-to-Quote across key comparison verticals.</li>
+        <li>Used customer research and Labs insights to influence future proposition development.</li>
+      </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Technical Product &amp; Delivery roles</span>
+        <span class="entry-title">Technical Product &amp; Delivery Roles</span>
         <span class="entry-dates">2010 – 2013</span>
       </div>
-      <p class="entry-org">BBC and Shazam</p>
-      <div class="entry-body">
-        <p>Large-scale consumer platforms including London 2012 Olympics streaming.</p>
-      </div>
+      <p class="entry-org">BBC &amp; Shazam</p>
+      <p class="entry-context">Delivered large-scale consumer technology products for two of the UK's best-known digital brands.</p>
+      <ul class="impact-list">
+        <li>Led cross-functional teams responsible for scaling the Shazam Android application.</li>
+        <li>Delivered flagship BBC products including London 2012 Olympics digital coverage, Torch Relay experiences and iPlayer on YouView.</li>
+      </ul>
     </div>
 
   </div>
@@ -322,7 +377,7 @@
   <!-- Earlier career — quiet, compressed -->
   <div class="earlier">
     <p class="earlier-title">Earlier career</p>
-    <p class="earlier-body">Software engineering and digital delivery with Volkswagen, Philips, Sony, lastminute.com, Haven and Debenhams — the technical foundation that continues to shape how I approach product leadership.</p>
+    <p class="earlier-body">Software engineering and technical delivery roles for Volkswagen, Philips, Sony, lastminute.com and Debenhams. These roles built the technical foundation that continues to shape my approach to product leadership.</p>
   </div>
 
   <!-- Closing -->
