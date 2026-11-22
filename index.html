@@ -29,7 +29,7 @@
   .page {
     max-width: 520px;
     margin: 0 auto;
-    padding: 96pt 0 96pt;
+    padding: 96pt 24pt 96pt;
   }
 
   /* ── Header ── */
@@ -329,7 +329,7 @@
       font-size: 11.5pt;
       margin-bottom: 9pt;
       color: #444444;
-      max-width: 90%;
+      max-width: 100%;
     }
 
     .prose p {
@@ -337,7 +337,7 @@
       color: #444444;
       margin-bottom: 7pt;
       line-height: 1.65;
-      max-width: 90%;
+      max-width: 100%;
     }
 
     /* ── Section spacing ── */
@@ -389,7 +389,7 @@
       color: #444444;
       margin-bottom: 8pt;
       line-height: 1.6;
-      max-width: 90%;
+      max-width: 100%;
     }
 
     /* ── Impact statements ── */
@@ -398,7 +398,7 @@
       color: #555555;
       padding: 3pt 0 3pt 16pt;
       line-height: 1.55;
-      max-width: 90%;
+      max-width: 100%;
     }
 
     .impact-list li strong {
@@ -422,13 +422,19 @@
       font-size: 7.5pt;
       color: #888888;
       line-height: 1.6;
-      max-width: 85%;
+      max-width: 100%;
     }
 
     /* ── Awards: keep together ── */
     .section:last-of-type {
       break-inside: avoid;
       page-break-inside: avoid;
+    }
+
+    .awards-list li {
+      font-size: 7.5pt;
+      color: #666666;
+      line-height: 1.6;
     }
 
     /* ── Closing: keep together, never orphaned ── */
@@ -444,8 +450,10 @@
       font-size: 10.5pt;
       color: #aaaaaa;
     }
+
   }
-   /* ── Download link — screen only ── */
+
+  /* ── Download link — screen only ── */
   .download-link {
     font-family: var(--sans);
     font-size: 7pt;
@@ -455,7 +463,7 @@
     color: var(--muted);
     text-decoration: none;
     display: block;
-    margin-top: 32pt;
+    margin-top: 4pt;
   }
 
   .download-link:hover {
@@ -464,6 +472,46 @@
 
   @media print {
     .download-link { display: none; }
+    .page { padding: 0; }
+  }
+
+  /* ── Company context line ── */
+  .entry-company {
+    font-family: var(--serif);
+    font-size: 10pt;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--secondary);
+    max-width: 440px;
+    margin-bottom: 6pt;
+  }
+
+  @media print {
+    .entry-company { font-size: 9pt; color: #444444; margin-bottom: 5pt; max-width: 100%; }
+  }
+
+  @media (max-width: 600px) {
+    .page {
+      padding: 48pt 20pt 48pt;
+    }
+
+    .proposition {
+      font-size: 15pt;
+    }
+
+    .pull {
+      font-size: 11pt;
+    }
+
+    .header {
+      flex-direction: column;
+      gap: 16pt;
+    }
+
+    .contact {
+      align-items: flex-start;
+    }
   }
 
 </style>
@@ -481,19 +529,20 @@
       <span>07951 572187</span>
       <a href="mailto:sam@samgrant.co.uk">sam@samgrant.co.uk</a>
       <a href="https://uk.linkedin.com/in/samanthagrant">uk.linkedin.com/in/samanthagrant</a>
+      <a class="download-link" href="assets/samantha-grant-cv.pdf" download>Download CV</a>
     </div>
   </div>
 
-  <!-- Proposition — the most prominent thing after the name -->
-  <p class="proposition">I help organisations become better at building products. My work sits at the intersection of product strategy, organisational design and technology leadership.</p>
-
-  <!-- Background -->
-  <div class="section">
-    <p class="pull">I enjoy working where products are struggling not because the teams aren't capable, but because ownership is unclear, priorities compete and decisions have become harder than they need to be.</p>
-    <div class="prose">
-      <p>I began my career in software engineering and delivery before moving into product leadership — a foundation that lets me work credibly across engineering, commercial strategy and executive leadership.</p>
-      <p>Recently, I've been embedding AI into product practice: accelerating discovery, synthesising customer insight, sharpening strategic thinking and helping teams adopt AI in practical, value-driven ways.</p>
-      <p>The work I'm proudest of has combined commercial success with meaningful customer impact — products that performed well commercially because they genuinely served people who had previously been underserved.</p>
+  <!-- Opening: website version (see CV.md) -->
+  <div class="opening-web">
+    <p class="proposition">I help organisations become better at building products. My work brings together product strategy, organisational design and technology leadership.</p>
+    <div class="section">
+      <p class="pull">I enjoy working with capable teams whose progress is slowed by unclear ownership, competing priorities and decisions that have become harder than they need to be.</p>
+      <div class="prose">
+      <p>I began my career in software engineering and delivery before moving into product leadership. That foundation helps me connect engineering decisions with commercial strategy and work confidently across teams and executive leadership.</p>
+      <p>Recently, I've been embedding AI into product practice, from discovery and customer insight to shipping features with AI agents.</p>
+      <p>The work I'm proudest of has combined commercial success with meaningful customer impact, building products that succeeded because they served people who had previously been underserved.</p>
+      </div>
     </div>
   </div>
 
@@ -507,12 +556,12 @@
         <span class="entry-dates">2024 – present</span>
       </div>
       <p class="entry-org">The Workshop</p>
-      <p class="entry-context">Leading product strategy across four domains in a complex B2B platform environment, partnering with engineering, architecture and executive leadership to align technology investment with business strategy.</p>
+      <p class="entry-company">B2B technology company providing white-label platforms to clients in several countries.</p>
+      <p class="entry-context">Lead a nine-person product team across five domains, which cover two core platforms, data, marketing and fraud capabilities, with delivery spanning in-house and partner engineering teams.</p>
       <ul class="impact-list">
-        <li>Rebuilt the product operating model around clear ownership and outcome-led delivery, shifting Product from order-taker to strategic partner.</li>
-        <li>Defined the Product Management career framework, creating consistent expectations, capability assessment and progression pathways.</li>
-        <li>Leading strategic initiatives spanning platform modernisation, AI adoption and organisational change, embedding AI into day-to-day product practice.</li>
-        <li>Acting as the senior product representative in executive and strategic partner engagements, strengthening commercial alignment and delivery confidence.</li>
+        <li>Led an automation programme that took routine eligibility checks out of a partner's customer support operation. It went live on time and now handles over three-quarters of in-scope requests, removing the need to hire extra support staff for peak events.</li>
+        <li>Gave product managers ownership of the vision and roadmap for each domain. Partners and executives now ask for individual PMs by name. Redefined product roles and responsibilities, which the department adopted.</li>
+        <li>Shipped one of the team's first production features built with AI agents: a cap on manual payments to customers, limiting the exposure a single erroneous entry could create.</li>
       </ul>
     </div>
 
@@ -522,12 +571,14 @@
         <span class="entry-dates">2020 – 2024</span>
       </div>
       <p class="entry-org">DeadHappy</p>
-      <p class="entry-context">Built and scaled digital protection products for audiences traditional insurers had excluded, combining commercial growth with meaningful customer impact.</p>
+      <p class="entry-company">VC-backed digital life insurer.</p>
+      <p class="entry-context">Built digital protection products for people underserved by traditional insurers.</p>
       <ul class="impact-list">
-        <li>Launched Cancer Cover (15% market penetration), Near Death Cover (30% market penetration) and Digital Wills (35% sign-up, 5% conversion), creating entirely new revenue streams.</li>
-        <li>Designed proposition and upsell initiatives that increased income per sale by 25%.</li>
-        <li>Introduced Direct Debit as a payment option, adopted by 75% of customers, reducing failed payments by 20%.</li>
-        <li>Led FCA Consumer Duty implementation, reporting directly to the Board, while expanding distribution through five new affiliate partnerships.</li>
+        <li>Increased income per sale by 25% through changes to the proposition and upsell.</li>
+        <li>Reduced failed payments by 20% by introducing Direct Debit, which 75% of customers adopted.</li>
+        <li>Opened new revenue streams with Cancer Cover and Near Death Cover, taken up by 15% and 30% of existing customers respectively, and Digital Wills, which 35% of existing customers signed up for.</li>
+        <li>Led FCA Consumer Duty implementation, reporting directly to the Board, and expanded distribution through five new affiliate partnerships.</li>
+        <li>Built the product function, hiring its first product manager, and produced the board packs and investor decks with the founders.</li>
       </ul>
     </div>
 
@@ -537,26 +588,28 @@
         <span class="entry-dates">2018 – 2020</span>
       </div>
       <p class="entry-org">Profile Pensions</p>
-      <p class="entry-context">Partnered with the CEO and CTO to modernise pension management, transforming complex, paper-based customer journeys into intuitive digital experiences.</p>
+      <p class="entry-company">VC-backed digital pensions adviser of around 100 people, later acquired by Moneyfarm.</p>
+      <p class="entry-context">Partnered with the CEO and CTO to replace paper-based pension servicing with digital journeys.</p>
       <ul class="impact-list">
-        <li>Replaced manual pension servicing with the Account Hub, creating an always-on digital relationship with customers.</li>
-        <li>Led the end-to-end digitisation of pension servicing journeys.</li>
-        <li>Improved acquisition and conversion through a complete redesign of onboarding and customer experience.</li>
+        <li>Replaced manual pension servicing with the Account Hub. This was part of a wider shift that let the business operate with around a quarter fewer people and cut annual losses by roughly 60% in 2019.</li>
+        <li>Helped build the automated advice and servicing platform that Moneyfarm cited when it acquired Profile Pensions in 2022.</li>
+        <li>Hired the business's first product designer, bringing design into the product team.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <span class="entry-title">Senior Product Roles</span>
+        <span class="entry-title">Project, Portfolio and Product Leadership</span>
         <span class="entry-dates">2013 – 2017</span>
       </div>
       <p class="entry-org">Comparethemarket.com</p>
-      <p class="entry-context">Led product strategy across multiple consumer propositions while helping mature product delivery at scale.</p>
+      <p class="entry-company">Market-leading UK price comparison site, part of BGL Group.</p>
+      <p class="entry-context">Held successive roles as Senior Project Manager, then Senior Manager, Portfolio Delivery, then Senior Product Manager.</p>
       <ul class="impact-list">
-        <li>Established and scaled the PMO function within an Agile delivery environment.</li>
-        <li>Launched Meerkat Movies, one of the company's flagship customer engagement initiatives.</li>
-        <li>Shaped and delivered proposition innovations including Simples and Snap-to-Quote across key comparison verticals.</li>
-        <li>Used customer research and Labs insights to influence future proposition development.</li>
+        <li>Led the launch of Meerkat Movies, working with VCCP, OMD UK and Cinema First. It reached 2.9 million members and 3.8 million redeemed vouchers in its first 16 months. Leading the programme earned me a promotion to a role reporting to the Managing Director.</li>
+        <li>Established and scaled the PMO and ran executive strategy days while reporting to the Managing Director.</li>
+        <li>Led product for Simples, a beta service from the Labs innovation team that brought customers' policies and renewal reminders into one dashboard. It grew to more than 10,000 customers without marketing spend.</li>
+        <li>As Senior Project Manager, delivered Snapt, the company's first app, which compared energy tariffs from a photo of a customer's bill, working with the agency Albion.</li>
       </ul>
     </div>
 
@@ -566,16 +619,15 @@
         <span class="entry-dates">2010 – 2013</span>
       </div>
       <p class="entry-org">BBC &amp; Shazam</p>
-      <p class="entry-context">Delivered large-scale consumer technology products for two of the UK's best-known digital brands.</p>
       <ul class="impact-list">
-        <li>Led cross-functional teams responsible for scaling the Shazam Android application.</li>
-        <li>Delivered flagship BBC products including London 2012 Olympics digital coverage, Torch Relay experiences and iPlayer on YouView.</li>
+        <li>Led cross-functional teams scaling Shazam's Android app.</li>
+        <li>Managed a team of 14 at the BBC, delivering products including digital coverage of the London 2012 Olympics, the Torch Relay experience and iPlayer on YouView.</li>
       </ul>
     </div>
 
   </div>
 
-  <!-- Earlier career — quiet, compressed -->
+  <!-- Earlier career -->
   <div class="earlier">
     <p class="earlier-title">Earlier career</p>
     <p class="earlier-body">Software engineering and technical delivery roles for Volkswagen, Philips, Sony, lastminute.com and Debenhams. These roles built the technical foundation that continues to shape my approach to product leadership.</p>
@@ -585,8 +637,6 @@
   <div class="closing">
     <p>I believe most product problems aren't solved by better roadmaps — they're solved by better thinking.</p>
   </div>
-
-   <a class="download-link" href="assets/samantha-grant-cv.pdf" download>Download PDF</a>
 
 </div>
 </body>
